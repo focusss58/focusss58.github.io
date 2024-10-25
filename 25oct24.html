@@ -13,8 +13,15 @@
         myButton2.onclick = myFunction
         function myFunction(){
             document.body.style.backgroundColor = 'BLACK';
-            
         }
+        let myButton3 = document.createElement('button');
+        myButton3.innerText = 'белый фон'
+        document.body.append(myButton3)
+        myButton3.onclick = myFunction2
+        function myFunction2(){
+            document.body.style.backgroundColor = 'pink';
+        }
+        
     </script>
     <body>
     <h1>Карта</h1>
