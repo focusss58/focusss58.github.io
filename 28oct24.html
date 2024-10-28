@@ -17,6 +17,12 @@
         zombie.style.position = 'fixed';
         zombie.style.top = '100px';
         zombie.style.left = left + 'px';
+
+        function moveZombie(){
+            left = left + step;
+            zombie.style.left = left + 'px'
+        }
+        setInterval(moveZombie, 100);
     </script>
 </body>
 </html>
