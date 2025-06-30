@@ -1,0 +1,252 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #fff5f5;
+    color: #3a1b1b;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #c0392b; 
+    color: white;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(192, 57, 43, 0.6);
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #e74c3c;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 1500;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+
+.logo + .logo {
+    margin: 500px auto 200px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #c0392b;
+    text-shadow: 0 0 5px rgba(192, 57, 43, 0.5);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+
+section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(192, 57, 43, 0.15);
+    padding: 30px 35px;
+    margin-bottom: 40px;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 12px 25px rgba(192, 57, 43, 0.3);
+}
+
+
+h2 {
+    margin-bottom: 25px;
+    color: #c0392b;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+form label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: 700;
+    color: #7a1e1e;
+    letter-spacing: 0.5px;
+}
+
+form select,
+form input[type="date"],
+form textarea,
+form input[type="text"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1.8px solid #c0392b;
+    box-sizing: border-box;
+    font-size: 1.05rem;
+    color: #3a1b1b;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form select:focus,
+form input[type="date"]:focus,
+form textarea:focus,
+form input[type="text"]:focus,
+form input[type="tel"]:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.6);
+    outline: none;
+}
+
+form textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+form label[for="urgent"] {
+    font-weight: 600;
+    color: #7a1e1e;
+}
+
+form p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 22px 0 15px;
+    color: #b03a2e;
+}
+
+
+form button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0 4px 10px rgba(192, 57, 43, 0.6);
+}
+
+form button:hover {
+    background-color: #e74c3c;
+    box-shadow: 0 6px 14px rgba(231, 76, 60, 0.8);
+}
+
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    color: #6e1b1b;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.service:hover {
+    color: #c0392b;
+}
+
+.service img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(192, 57, 43, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.service:hover img {
+    transform: scale(1.05);
+}
+
+
+#help p {
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+    color: #7a1e1e;
+    font-weight: 600;
+}
+
+.help-img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(192, 57, 43, 0.3);
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.help-img:hover {
+    box-shadow: 0 12px 30px rgba(231, 76, 60, 0.5);
+}
+
+#help button {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 700;
+    box-shadow: 0 5px 14px rgba(192, 57, 43, 0.6);
+}
+
+#help button:hover {
+    background-color: #e74c3c;
+    box-shadow: 0 7px 18px rgba(231, 76, 60, 0.8);
+}
+
+
+footer {
+    background-color: #7a1e1e;
+    color: #f5d1cf;
+    text-align: center;
+    padding: 25px 18px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    box-shadow: 0 -3px 10px rgba(122, 30, 30, 0.8);
+}
